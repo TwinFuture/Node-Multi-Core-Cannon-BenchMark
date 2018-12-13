@@ -70,6 +70,7 @@ ___
 ## Computer Specification used for the test
 | Small Server 100mbit 8 clusters | Larger Server 12 clusters |
 | ------------------------------- | ------------------------- |
+| OS Centos 7 64bit | Windows 10 Pro 64bit |
 | i7-3632QM 4 core 2.2ghz Turbo Boost upto 3.2ghz | Motherboard Asus x99-Deluxe |
 | 6GB DDR3 Ram | CPU i7 5820k 6 core 3.3ghz clocked to 4.2ghz Stable |
 | 500gb HDD| GPU Nvidia GTX 970 Zotac |
