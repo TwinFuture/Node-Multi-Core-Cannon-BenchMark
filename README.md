@@ -1,5 +1,5 @@
 # Node JS Benchmarking Using AutoCannon to the Max!
-**24,927 reqs in 80 seconds. 343k req/s on a single machine!**
+**24,927 Million reqs in 80 seconds. 343k req/s on a single machine!**
 
 AutoCannon is a HTTP/1.1 benchmarking tool written in Node JS and is the most powerful HTTP stress tester I have come accross. This stress tester is able to send over 1 million req's a second on a single machine when clustered!
 You can try and test it yourself using the examples. I haven't managed to get any other benchmarking tool to send large amounts of requests without other benchmarking tools busting the cpu when sending.
@@ -63,7 +63,7 @@ Resource Usage | AutoCannon Results
 --- | ---
 | ![BenchTest2](https://i.imgur.com/0Cr7HgO.png) | ![BenchTest2](https://i.imgur.com/xDNF9s9.png) |
 
-I needed to run the test on 4 clussters because on one cluster the maxmimum amount of requests I could send was 100k which was what we got from our previous test on our smaller server. Autocannon nearly used all the CPU's on 4 of its clusters and so did the server with 8 clusters. So we literally maxed out the CPU out sending the req's and recieving them on the server. This resulted in a whooping **24,927 reqs in 80 seconds. 343k req/s on a single machine!** Truely Amazing, considering were only testing nodes basic http server.
+I needed to run the test on 4 clussters because on one cluster the maxmimum amount of requests I could send was 100k which was what we got from our previous test on our smaller server. Autocannon nearly used all the CPU's on 4 of its clusters and so did the server with 8 clusters. So we literally maxed out the CPU out sending the req's and recieving them on the server. This resulted in a whooping **24,927 Million reqs in 80 seconds. 343k req/s on a single machine!** Truely Amazing, considering were only testing nodes basic http server.
 ___
 ## Maxmimum Capabilities (**)
 I have tested this on multiple machines and the results all lead to this conclusion, it seems using Node JS with the built in Node HTTP server, if you're on a 100mbit connection, the maximum amount of requests your server can recieve is 100k a second and 10-11mbs transfer *approximately.* ***This does need to be tested by someone else to fully verify.. Could be something in my environment....*** So you could load balance a few 100mbit servers or simply upgrade your link speed to say 1gbit to beable to send the server more requests. That's if you are sending the requests from a machine that the server is not on. If you're doing the benchmarking on the same machine as the server you don't have to worry about these limits.
