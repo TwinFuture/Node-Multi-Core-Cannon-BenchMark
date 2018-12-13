@@ -1,5 +1,5 @@
 const cluster = require('cluster'),
-    numCPUs = 3;
+    numCPUs = 2;
 
 if (cluster.isMaster) {
     // Fork workers.
