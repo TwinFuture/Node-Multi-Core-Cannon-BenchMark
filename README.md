@@ -18,7 +18,7 @@ Requires the Dependecy [AutoCannon](https://github.com/mcollina/autocannon)
 | Server | The Example Node JS Clustered http server to Benchmark |
 
 ### Installation
-Download NodeJsBench and Navigate to the Server Direcotry and open app.js then edit the `numCPUs = 2;` To your desired number, **Must not exceed amount of logical Processors.** *Please leave some CPU's for BenchMark to use to send the req's. If you have 4 cpu's try 2 on both or if you have 6, try 4 for the server 2 for the BenchMark.*
+Download Node-Multi-Core-Cannon-BenchMark and Navigate to the Server Direcotry and open app.js then edit the `numCPUs = 2;` To your desired number, **Must not exceed amount of logical Processors.** *Please leave some CPU's for BenchMark to use to send the req's. If you have 4 cpu's try 2 on both or if you have 6, try 4 for the server 2 for the BenchMark.*
 Once done make sure you are inside the Server Directory and in your terminal/cmd run.
 ```sh
 node app.js
