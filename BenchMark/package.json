@@ -1,0 +1,14 @@
+{
+  "name": "Node-Multi-Core-Cannon-BenchMark",
+  "version": "1.0.0",
+  "description": "Clustered multi-core HTTP benchmarking using Node JS and AutoCannon the most powerful Network Stresser Available.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Twin Future",
+  "license": "ISC",
+  "dependencies": {
+    "autocannon": "^3.2.0"
+  }
+}
