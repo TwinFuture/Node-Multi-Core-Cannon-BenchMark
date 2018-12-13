@@ -50,14 +50,14 @@ ___
 `Settings -c 300 -d 80 -p 400`
 This test was done where AutoCannon was fired from a different machne than the server was running on, so the server had 100% CPU to cope with the requests cause autocannon gets CPU hungry when your server wants to eat.
 | Resource Usage | AutoCannon Results |
-:-------------------------:|:-------------------------:
-|![resource1](https://i.imgur.com/qtwmUPZ.png)| ![result1](https://i.imgur.com/Sag3hYp.png) |
+| ---- | ---- |
+| ![resource1](https://i.imgur.com/qtwmUPZ.png) | ![result1](https://i.imgur.com/Sag3hYp.png) |
 As you can see the server is using 8 cores and they ae all maxed out. The network is also maxed out on 100mbit. Seems here our CPU and network both top out at the same time... Nice... Below is the resource usage for AutoCannon I ran Autocannon from Windows 10, which was firing at a linux server. Then we have our Auto Cannon results on the right. As we can see we have completely maxed out our network with the 100mbit connection being completly used up and with this we got 105 req's a second with a total of 8.1 million requests in 80 seconds. Now that's pretty impressive! Specs are below. 
 ### More powerful Server no link localhost.
 `Settings -c 100 -d 80 -p 100`
 For this test I had a total of 12 Logical Processors so I used 8 for the server and 4 for the BenchTest.
 | Resource Usage | AutoCannon Results |
-:-------------------------:|:-------------------------:
+| ---- | ---- |
 | ![BenchTest2](https://i.imgur.com/0Cr7HgO.png) | ![BenchTest2](https://i.imgur.com/xDNF9s9.png) |
 I needed to run the test on 4 clussters because on one cluster the maxmimum amount of requests I could send was 100k which was what we got from our previous test on our smaller server. Autocannon nearly used all the CPU's on 4 of its clusters and so did the server with 8 clusters. So we literally maxed out the CPU out sending the req's and recieving them on the server. This resulted in a whooping **24,927 reqs in 80 seconds. 343k req/s on a single machine!** Truely Amazing, considering were only testing nodes basic http server.
 ___
